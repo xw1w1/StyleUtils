@@ -31,7 +31,7 @@ will give us:
 
 `destyle(Object)` will remove all TextDecorations from your Object (Component)
 
-also you can use `gradient(int color1, int color2, "text" (can be a component, like bold() or red()))`
+also you can use `gradient(int color1, int color2, "text" (can be a component, like bold() or red()))` where `color` = HEX num
 
 gradient with 3 or even 4 colors also avaliable
 

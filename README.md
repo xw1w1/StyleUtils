@@ -37,7 +37,7 @@ gradient with 3 or even 4 colors also avaliable
 
 `hex(String #000000)` returns you Component.text colored in specified HEX color
 
-check `hover()`, `suggestCommand()`, `openUrl()` etc. in class file
+check `hover()`, `suggestCommand()`, `openUrl()` etc. in java file
 
 As you can see it really cuts down the code, so, as for me, this thing really makes sense
 

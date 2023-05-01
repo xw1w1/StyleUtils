@@ -14,7 +14,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class TextSenderAdapter {
+public class StyleUtils {
 
     /**
      *
@@ -60,7 +60,7 @@ public class TextSenderAdapter {
      * @return Component[]
      */
     public static @NotNull Component @NotNull [] components(@Nullable Object @NotNull ... objects) {
-        return Arrays.stream(objects).filter(Objects::nonNull).map(TextSenderAdapter::component).toArray(Component[]::new);
+        return Arrays.stream(objects).filter(Objects::nonNull).map(StyleUtils::component).toArray(Component[]::new);
     }
 
     /**

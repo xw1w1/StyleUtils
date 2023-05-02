@@ -18,11 +18,11 @@ public class StyleUtils {
 
     /**
      *
-     * @param objects List of objects to be converted into one
+     * @param components List of components to be converted into one
      * @return Array of objects
      */
-    public @NotNull Component single(@NotNull Object... objects) {
-            return Component.join(JoinConfiguration.noSeparators(), components(objects));
+    public @NotNull Component single(@NotNull Component... components) {
+            return Component.join(JoinConfiguration.noSeparators(), components);
     }
 
     /**

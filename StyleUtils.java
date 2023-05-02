@@ -22,18 +22,8 @@ public class StyleUtils {
      * @return Array of objects
      */
     public static Component single(@Nullable Component... components) {
-        if (components.length == 0) {
-            return empty();
-        } else {
-            Component[] array = Arrays.stream(components).map(c -> c == null ? empty() : c).toArray(Component[]::new);
-            if (array.length == 0) {
-                return empty();
-            } else if (array.length == 1) {
-                return array[0];
-            } else {
-                return join((Object[]) array);
-            }
-        }
+        Component[] array = Arrays.stream(components).toArray(Component[]::new);
+            return array.length == 0 ? empty() : join(array);
     }
 
     /**

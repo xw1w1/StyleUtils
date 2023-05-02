@@ -1,6 +1,4 @@
 # StyleUtils
-part of ru.mineum.mcore TextSenderAdapter
-
 This class was created to simplify the creation of Components from the Kyori Adventure API.
 
 It contains methods that can recolor, add decoration, remove decoration, or glue multiple components together

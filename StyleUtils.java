@@ -18,21 +18,11 @@ public class StyleUtils {
 
     /**
      *
-     * @param components List of components to be converted into one
+     * @param objects List of objects to be converted into one
      * @return Array of objects
      */
-    public static Component single(@Nullable Component... components) {
-        Component[] array = Arrays.stream(components).toArray(Component[]::new);
-            return array.length == 0 ? empty() : join(array);
-    }
-
-    /**
-     *
-     * @param objects Objects to be glued in one
-     * @return Component.text concatenating all given objects
-     */
-    public static @NotNull Component join(@NotNull Object[] objects) {
-        return Component.join(JoinConfiguration.noSeparators(), components(objects));
+    public @NotNull Component single(@NotNull Object... objects) {
+            return Component.join(JoinConfiguration.noSeparators(), components(objects));
     }
 
     /**

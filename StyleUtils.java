@@ -98,11 +98,11 @@ public class StyleUtils {
     /**
      *
      * @param objects Strings or Components to be colored in specified HEX color
-     * @param color HEX color in format "#000000"
+     * @param color HEX color in format "000000"
      * @return Component.text() colored in specified HEX color
      */
-    public @NotNull Component hex(String color, @Nullable Object @NotNull... objects) {
-        return single(components(objects)).colorIfAbsent(TextColor.fromHexString(color));
+    public @NotNull Component hex(int color, @Nullable Object @NotNull... objects) {
+        return single(components(objects)).colorIfAbsent(TextColor.fromHexString("#" + color));
     }
 
     /**

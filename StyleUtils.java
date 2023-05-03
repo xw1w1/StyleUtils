@@ -1,5 +1,3 @@
-package ru.mineum.mcore;
-
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.JoinConfiguration;
 import net.kyori.adventure.text.event.ClickEvent;
@@ -128,8 +126,8 @@ public class StyleUtils {
 
     /**
      *
-     * @param objects String text which will then be transformed into a Component with strikethrough text decoration
-     * @return Component.text(objects) decorated with TextDecoration.STRIKETHROUGH
+     * @param objects String text which will then be transformed into a Component with italic text decoration
+     * @return Component.text(objects) decorated with TextDecoration.ITALIC
      */
     public @NotNull Component italic(@Nullable Object... objects) {
         return single(components(objects)).decorate(TextDecoration.ITALIC);

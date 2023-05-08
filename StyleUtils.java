@@ -88,8 +88,8 @@ public class StyleUtils {
     /**
      *
      * @param objects Strings or Components to be colored in gradient
-     * @param firstColor HEX color in format "#000000"
-     * @param secondColor HEX color in format "#000000"
+     * @param firstColor HEX color in format "000000"
+     * @param secondColor HEX color in format "000000"
      * @return Component.text() colored in gradient
      */
     public static @NotNull Component gradient(@NotNull String firstColor, @NotNull String secondColor, Object @NotNull ... objects) {
@@ -105,7 +105,7 @@ public class StyleUtils {
      * @since 1.4
      */
     public static @NotNull Component hex(@NotNull String color, @Nullable Object @NotNull ... objects) {
-        return single(components(objects)).colorIfAbsent(TextColor.fromHexString("#" + color));
+        return single(components(objects)).colorIfAbsent(TextColor.fromHexString(color));
     }
 
     /**

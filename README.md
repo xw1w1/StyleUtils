@@ -43,5 +43,3 @@ As you can see it really cuts down the code, so, as for me, this thing really ma
 
 ![image](https://user-images.githubusercontent.com/102028245/235480718-a4210b92-1be8-47d6-8330-60e1e960f920.png)
 
-# GLORY TO PaperMC and Kyori ofc
-

@@ -374,4 +374,8 @@ public class StyleUtils {
     public static @NotNull Component white(@Nullable Object... objects) {
         return single(components(objects)).colorIfAbsent(NamedTextColor.WHITE);
     }
+    
+    public static @NotNull Component text(@Nullable Object... objects) {
+        return single(components(objects));
+    }
 }

@@ -6,7 +6,7 @@ It contains methods that can recolor, add decoration, remove decoration, or glue
 # Usage
 for example:
 
-`single(red("red text ", aqua("with some aqua text")))`
+`single(red("red text "), aqua("with some aqua text"))`
 
 will give us:
 

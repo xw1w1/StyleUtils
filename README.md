@@ -27,7 +27,8 @@ Equivalent to this:
 `MiniMessage.miniMessage.deserialize("<red>A component <gold>with even more components </aqua>inside!")` 
 
 
-![image](https://user-images.githubusercontent.com/102028245/235476435-bb87d098-8127-4fa2-a5c5-7d75764c7a9d.png)
+![изображение](https://github.com/user-attachments/assets/56395519-f0e4-41f6-861f-3649470c19f6)
+
 
 
 ## Text Decorations

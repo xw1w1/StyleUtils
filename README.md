@@ -24,7 +24,7 @@ _as you can see, if you just write a string after all those extra components, it
 
 Equivalent to this:
 
-`MiniMessage.miniMessage.deserialize("<red>A component <gold>with even more components </aqua>inside!")` 
+`MiniMessage.miniMessage.deserialize("<red>A component</red> <gold>with even more components</gold> <aqua>inside</aqua> <red>!</red>")` 
 
 
 ![изображение](https://github.com/user-attachments/assets/56395519-f0e4-41f6-861f-3649470c19f6)

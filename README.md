@@ -34,6 +34,7 @@ Equivalent to this:
 ## Text Decorations
 Here we have all possible text decorations, like BOLD, TALIC, OBFUSCATED, STRIKETHROUGH etc.
 for example: `bold(red("Red bold text, "), strikethrough(aqua("and aqua text again.")));`, `italic()`, `obfuscated()` and `strikethrough()`
+
 ![изображение](https://github.com/user-attachments/assets/af2d7e3f-66e0-4b71-ba17-11e832157b41)
 
 
@@ -41,6 +42,7 @@ for example: `bold(red("Red bold text, "), strikethrough(aqua("and aqua text aga
 
 
 Also you can use `gradient(String color1, String color2, "text" (can be a component, like bold() or red()))` where `colors` is a hex strings, WITHOUT #'s
+
 ![изображение](https://github.com/user-attachments/assets/ae5e822e-2417-4710-b24e-1b80ee79e4f6)
 
 

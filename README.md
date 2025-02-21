@@ -1,11 +1,12 @@
 # StyleUtils
 This class was created to simplify the creation of Components from the Kyori Adventure API.
 
-It contains methods that can recolor, add decoration, remove decoration, or glue multiple components together
+It contains methods that can create colored text, add decoration, remove decoration, or glue multiple components together
 
 # Usage
-for example:
 
+##Colors
+For example, this methods used together:
 `single(red("red text "), aqua("with some aqua text"))`
 
 will give us:
@@ -14,10 +15,10 @@ will give us:
 
 ![image](https://user-images.githubusercontent.com/102028245/235480188-a33a0ed9-d717-43c5-a7d1-51bdd56b15f7.png)
 
-
+Or, we can omit the `single()` method and write directly like this:
 `red("text ", gold("more text "), "with more text")`
 
-will give us:
+Equivalent to this:
 
 `MiniMessage.miniMessage.deserialize("<red>text <gold>moretext </gold>with more text")` 
 
@@ -25,17 +26,20 @@ will give us:
 ![image](https://user-images.githubusercontent.com/102028245/235476435-bb87d098-8127-4fa2-a5c5-7d75764c7a9d.png)
 
 
-`bold(red("red bold text"))` same as `italic()` and `obfuscated()` or `strikethrough()` i don't think needs to be explained
+## Text Decorations
+Here we have all possible text decorations, like BOLD, TALIC, OBFUSCATED, STRIKETHROUGH etc.
+for example: `bold(red("red bold text"))`, `italic()`, `obfuscated()` and `strikethrough()`
 
-`destyle(Object)` will remove all TextDecorations from your Object (Component)
+`destyle(Object)` will remove all TextDecorations from your component.
 
-also you can use `gradient(int color1, int color2, "text" (can be a component, like bold() or red()))` where `color` = HEX num
 
-gradient with 3 or even 4 colors also avaliable
+Also you can use `gradient(String color1, String color2, "text" (can be a component, like bold() or red()))` where `colors` is a hex strings, WITHOUT #'s
 
-`hex(String #000000)` returns you Component.text colored in specified HEX color
+Method `hex(color, objects)` returns you Component.text() colored in specified HEX color
 
-check `hover()`, `suggestCommand()`, `openUrl()` etc. in java file
+## Events
+
+You can manualy check `hover()`, `suggestCommand()`, `openUrl()` etc. methods in source file.
 
 As you can see it really cuts down the code, so, as for me, this thing really makes sense
 

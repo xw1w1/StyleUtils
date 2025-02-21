@@ -5,7 +5,7 @@ It contains methods that can create colored text, add decoration, remove decorat
 
 # Usage
 
-##Colors
+## Colors
 For example, this methods used together:
 `single(red("red text "), aqua("with some aqua text"))`
 

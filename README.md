@@ -7,20 +7,24 @@ It contains methods that can create colored text, add decoration, remove decorat
 
 ## Colors
 For example, this methods used together:
-`single(red("red text "), aqua("with some aqua text"))`
+`single(red("Red text "), aqua("with some aqua text after"), green(", and a little bit of green"))`
 
 will give us:
 
-`Component.text("red text ").color(NamedTextColor.RED).append(Component.text("with some aqua text").color(NamedTextColor.AQUA))`
+`Component.text("Red text ").color(NamedTextColor.RED)
+.append(Component.text("with some aqua text after").color(NamedTextColor.AQUA))
+.append(Component.text(, and a little bit of green").color(NamedTextColor.GREEN))`
 
-![image](https://user-images.githubusercontent.com/102028245/235480188-a33a0ed9-d717-43c5-a7d1-51bdd56b15f7.png)
+![image](https://github.com/user-attachments/assets/de0f945f-0c97-4444-8bf0-b29641ca7d59)
+
 
 Or, we can omit the `single()` method and write directly like this:
-`red("text ", gold("more text "), "with more text")`
+`red("A component ", gold("with even more components "), aqua("inside"), "!");`
+_as you can see, if you just write a string after all those extra components, it will be the color it is in._
 
 Equivalent to this:
 
-`MiniMessage.miniMessage.deserialize("<red>text <gold>moretext </gold>with more text")` 
+`MiniMessage.miniMessage.deserialize("<red>A component <gold>with even more components </aqua>inside!")` 
 
 
 ![image](https://user-images.githubusercontent.com/102028245/235476435-bb87d098-8127-4fa2-a5c5-7d75764c7a9d.png)
@@ -28,12 +32,16 @@ Equivalent to this:
 
 ## Text Decorations
 Here we have all possible text decorations, like BOLD, TALIC, OBFUSCATED, STRIKETHROUGH etc.
-for example: `bold(red("red bold text"))`, `italic()`, `obfuscated()` and `strikethrough()`
+for example: `bold(red("Red bold text, "), strikethrough(aqua("and aqua text again.")));`, `italic()`, `obfuscated()` and `strikethrough()`
+![изображение](https://github.com/user-attachments/assets/af2d7e3f-66e0-4b71-ba17-11e832157b41)
+
 
 `destyle(Object)` will remove all TextDecorations from your component.
 
 
 Also you can use `gradient(String color1, String color2, "text" (can be a component, like bold() or red()))` where `colors` is a hex strings, WITHOUT #'s
+![изображение](https://github.com/user-attachments/assets/ae5e822e-2417-4710-b24e-1b80ee79e4f6)
+
 
 Method `hex(color, objects)` returns you Component.text() colored in specified HEX color
 
